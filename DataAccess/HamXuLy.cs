@@ -45,8 +45,6 @@ namespace DataAccess
             }
             return sb.ToString();
         }
-
-        [Obsolete]
         public static bool SendMail(string to_address, string subject, string body)
         {
             try
@@ -82,6 +80,86 @@ namespace DataAccess
                 return false;
             }
         }
-     
+        public static string ConverIntToString(int number)
+        {
+            if (number == 1)
+                return "true";
+            return "false";
+        }
+
+        public static string ConvertTrueFalse(string bol)
+        {
+            string _bool = bol.Trim().ToLower();
+            if (_bool == "true")
+                return "false";
+            else
+                if (_bool == "false")
+                    return "true";
+            return "";
+        }
+        public static string RemoveHtml(string text)
+        {
+            if (text.IndexOf("<p>") == 0)
+            {
+                text = text.Remove(0, 3);
+            }
+            if (text.IndexOf("<p") == 0)
+            {
+                text = text.Remove(0, 2);
+                text = text.Remove(0, text.IndexOf("<"));
+            }
+            if (text.LastIndexOf("</p>") == text.Length - 4)
+            {
+                text = text.Substring(0, text.LastIndexOf("</p>"));
+            }
+            return text;
+        }
+        public static float ToFloat(object obj)
+        {
+            try
+            {
+                float rs = float.Parse(obj.ToString());
+                if (rs < 0) return 0;
+                return rs;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+        public static string ToString(object obj)
+        {
+            try
+            {
+                return Convert.ToString(obj);
+            }
+            catch
+            {
+                return "";
+            }
+        }
+        public static DateTime ToDateTime(object obj)
+        {
+            try
+            {
+                return Convert.ToDateTime(obj);
+            }
+            catch
+            {
+                return Convert.ToDateTime("1/1/2009");
+            }
+        }
+        public static int ToInt(object obj)
+        {
+            try
+            {
+                return Convert.ToInt32(obj);
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+       
     }
 }

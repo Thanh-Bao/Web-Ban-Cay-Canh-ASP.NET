@@ -21,6 +21,7 @@ namespace Core
                 }
                 objProperties.TrimExcess();
                 
+                HttpRuntime.Cache.Insert(objType.FullName, objProperties);
             }
             return objProperties;
         }
@@ -170,7 +171,7 @@ namespace Core
                     {
                         if (Convert.IsDBNull(dr.GetValue(arrOrdinals[i])))
                         {
-                            objProperties[i].SetValue(objObject,null, null);
+                            objProperties[i].SetValue(objObject, null, null);
                         }
                         else
                         {
@@ -283,7 +284,7 @@ namespace Core
             {
                 if (objProperties[i].CanWrite)
                 {
-                    objProperties[i].SetValue(objObject, null, null);
+                    objProperties[i].SetValue(objObject,null, null);
                 }
             }
             return objObject;
