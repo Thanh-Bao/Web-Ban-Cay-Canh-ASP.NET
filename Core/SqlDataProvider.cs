@@ -79,19 +79,12 @@ namespace Core
             return SqlHelper.ExecuteNonQuery(connectionString, spName, parameterValues);
         }
 
-        public override DataSet ExecuteDataset(string spName, params object[] parameterValues)
-        {
-            return SqlHelper.ExecuteDataset(connectionString, spName, parameterValues);
-        }
+       
 
         public override IDataReader ExecuteReader(string spName, params object[] parameterValues)
         {
             return SqlHelper.ExecuteReader(connectionString, spName, parameterValues);
         }
 
-        public override object ExecuteScalar(string spName, params object[] parameterValues)
-        {
-            return SqlHelper.ExecuteScalar(connectionString, spName, parameterValues);
-        }
     }
 }

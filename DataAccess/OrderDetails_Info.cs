@@ -8,9 +8,7 @@ namespace DataAccess
 {
   public  class OrderDetails_Info
     {
-        public int orderid { get; set; }
-        public int ProductsId { get; set; }
-        public int SoLuong { get; set; }
+      
       //thêm
         public static bool Add(int orderid, int ProductsId, int SoLuong)
         {

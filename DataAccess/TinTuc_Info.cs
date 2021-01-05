@@ -13,8 +13,7 @@ namespace DataAccess
         public string TieuDe { get; set; }
         public string TomTat { get; set; }
         public string NoiDung { get; set; }
-        public DateTime NgayDang { get; set; }
-        public string TrangThai { get; set; }
+      
      //lấy tất cả
         public static List<TinTuc_Info> getall()
         {
