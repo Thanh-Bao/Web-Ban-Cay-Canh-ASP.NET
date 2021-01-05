@@ -4,6 +4,8 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+desktop.ini
+README.md
 *.rsuser
 *.suo
 *.user
@@ -276,6 +278,7 @@ ServiceFabricBackup/
 
 # Microsoft Fakes
 FakesAssemblies/
+
 
 # GhostDoc plugin setting file
 *.GhostDoc.xml

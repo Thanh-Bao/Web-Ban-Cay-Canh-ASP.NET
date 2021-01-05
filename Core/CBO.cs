@@ -1,10 +1,11 @@
+using Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
 
-namespace Core
+namespace CoreCore.CBO
 {
     public class CBO
     {
