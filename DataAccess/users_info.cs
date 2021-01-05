@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Core;
-using CoreCore.CBO;
 
 namespace DataAccess
 {

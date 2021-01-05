@@ -59,6 +59,16 @@ namespace Nhom3.AdminControls
        
 
 
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            //MultiView1.ActiveViewIndex = 1;
+            //DropDownList2.DataSource = items.getparent("1");
+            //DropDownList2.DataTextField = "names";
+            //DropDownList2.DataValueField = "id";
+            ////DropDownList2.Items.Add(new ListItem("roor", "0"));
+            //DropDownList2.DataBind();
+            //DropDownList2.Items.Add(new ListItem("--Root--", "0"));
+        }
 
         protected void Delete_Load(object sender, EventArgs e)
         {
@@ -96,6 +106,25 @@ namespace Nhom3.AdminControls
         private string LoadMenu()
         {
             string htmlMenu = "";
+            //DataTable dtbRoot = items.getparent("");
+            //if (dtbRoot.Rows.Count > 0)
+            //{
+            //    foreach (DataRow dr1 in dtbRoot.Rows)
+            //    {
+            //        htmlMenu += "<a style='text-transform:uppercase'><b>" + dr1["names"] + "</b></a>";
+            //        DataTable dtbSub = items.getchild(dr1["id"].ToString(), "");
+            //        if (dtbSub.Rows.Count > 0)
+            //        {
+            //            htmlMenu += "<div class='vll'><ul>";
+            //            foreach (DataRow dr2 in dtbSub.Rows)
+            //            {
+            //                htmlMenu += "<li><a href='Default.aspx?page=byitem&item=" + dr2["id"] + "'>" +
+            //                            cv(dr2["names"].ToString()) + "</a></li>";
+            //            }
+            //            htmlMenu += "</ul></div>";
+            //        }
+            //    }
+            //}
             return htmlMenu;
         }
 
@@ -169,6 +198,7 @@ namespace Nhom3.AdminControls
         protected void bntThemMoi_Click(object sender, EventArgs e)
         {
             int parent = Convert.ToInt32(DropDownList2.SelectedValue);
+            // Response.Write(parent.ToString());
             int no = Convert.ToInt32(TextBox2.Text.Trim());
             int status;
             if (cbstatus.Checked)
@@ -179,8 +209,12 @@ namespace Nhom3.AdminControls
             {
                 status = 0;
             }
+            //try
+            //{
             category_info.Add(parent, TextBox1.Text.Trim(), no, status);
             Response.Redirect("admin.aspx?page=danhmuc");
+            //}
+            //catch { }
         }
 
         protected void Button4_Click1(object sender, EventArgs e)

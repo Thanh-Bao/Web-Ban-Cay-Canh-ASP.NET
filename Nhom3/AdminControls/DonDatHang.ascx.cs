@@ -78,6 +78,7 @@ namespace Nhom3.AdminControls
             string name = e.CommandName;
             int id = Convert.ToInt32(e.CommandArgument.ToString());
             Orders_Info order = Orders_Info.getbyid(id.ToString());
+            //dt = hoadon.getcartdetail_byid(Convert.ToInt32(id));
             switch (name)
             {
                 case "xoa":
