@@ -8,7 +8,6 @@ namespace DataAccess
 {
    public class lienhe_info
     {
-        public int id { get; set; }
         public string hoten { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
