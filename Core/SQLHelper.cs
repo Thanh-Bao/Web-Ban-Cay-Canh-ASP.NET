@@ -1,4 +1,4 @@
-/*// ===============================================================================
+// ===============================================================================
 // Microsoft Data Access Application Block for .NET
 // http://msdn.microsoft.com/library/en-us/dnbda/html/daab-rm.asp
 //
@@ -2760,4 +2760,4 @@ namespace Microsoft.ApplicationBlocks.Data
 
         #endregion Parameter Discovery Functions
     }
-}*/
+}
