@@ -1,4 +1,4 @@
-// ===============================================================================
+/*// ===============================================================================
 // Microsoft Data Access Application Block for .NET
 // http://msdn.microsoft.com/library/en-us/dnbda/html/daab-rm.asp
 //
@@ -134,7 +134,7 @@ namespace Microsoft.ApplicationBlocks.Data
                 // If the current array value derives from IDbDataParameter, then assign its Value property
                 if (parameterValues[i] is IDbDataParameter)
                 {
-                    var paramInstance = (IDbDataParameter)parameterValues[i];
+                    var paramInstance = (IDbDataParameter) parameterValues[i];
                     if (paramInstance.Value == null)
                     {
                         commandParameters[i].Value = DBNull.Value;
@@ -2601,7 +2601,7 @@ namespace Microsoft.ApplicationBlocks.Data
 
             for (int i = 0, j = originalParameters.Length; i < j; i++)
             {
-                clonedParameters[i] = (SqlParameter)((ICloneable)originalParameters[i]).Clone();
+                clonedParameters[i] = (SqlParameter) ((ICloneable) originalParameters[i]).Clone();
             }
 
             return clonedParameters;
@@ -2723,7 +2723,7 @@ namespace Microsoft.ApplicationBlocks.Data
                                                          bool includeReturnValueParameter)
         {
             if (connection == null) throw new ArgumentNullException("connection");
-            using (var clonedConnection = (SqlConnection)((ICloneable)connection).Clone())
+            using (var clonedConnection = (SqlConnection) ((ICloneable) connection).Clone())
             {
                 return GetSpParameterSetInternal(clonedConnection, spName, includeReturnValueParameter);
             }
@@ -2760,4 +2760,4 @@ namespace Microsoft.ApplicationBlocks.Data
 
         #endregion Parameter Discovery Functions
     }
-}
+}*/
