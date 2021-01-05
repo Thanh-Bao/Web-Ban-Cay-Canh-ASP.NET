@@ -48,7 +48,10 @@ namespace DataAccess
         }
 
 
-     
+        public static List<Products_info> Getnameitem(string iditem)
+        {
+            return CBO.FillCollection<Products_info>(DataProvider.Instance.ExecuteReader("Products_Getnameitem", iditem));
+        }
 
         public static bool Add(int id_item, string pname, string pmota, string pchitiet, string ppricecurrent,
                                string ppriceold, string pimage, int pnew, int pkhuyenmai, int phot, string pngaydang,
@@ -108,7 +111,11 @@ namespace DataAccess
             }
         }
 
-    
+        public static List<Products_info> Getby_option(string option)
+        {
+            return CBO.FillCollection<Products_info>(DataProvider.Instance.ExecuteReader("Products_Getby_option", option));
+        }
+
         public static List<Products_info> TimKiem(string key)
         {
             string key2 = "%" + key + "%";

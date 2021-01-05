@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\bin\Debug\Core.dll
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\bin\Debug\Core.pdb
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Administrator\Desktop\Gốc\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Administrator\Desktop\Gốc\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Administrator\Desktop\Gốc\DataAccess\bin\Debug\Core.dll
+C:\Users\Administrator\Desktop\Gốc\DataAccess\bin\Debug\Core.pdb
+C:\Users\Administrator\Desktop\Gốc\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Gốc\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Gốc\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Gốc\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Administrator\Desktop\Gốc\DataAccess\obj\Debug\DataAccess.pdb

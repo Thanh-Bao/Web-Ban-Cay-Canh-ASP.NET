@@ -39,7 +39,18 @@ namespace DataAccess
             return CBO.FillObject<Orders_Info>(DataProvider.Instance.ExecuteReader("Orders_GetById", id));
         }
         
-    
+        public static bool Update(int id, int parentid, string names, int no, int active)
+        {
+            try
+            {
+                object rs = DataProvider.Instance.ExecuteNonQuery("category_update", id, parentid, names, no, active);
+                return Convert.ToInt32(rs) > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         public static bool Delete(int id)
         {

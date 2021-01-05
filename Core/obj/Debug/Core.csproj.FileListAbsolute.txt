@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\Core\bin\Debug\Core.dll
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\Core\bin\Debug\Core.pdb
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\Core\obj\Debug\Core.dll
+C:\Users\Administrator\Desktop\NGOTHE\Nhom3\Core\obj\Debug\Core.pdb
+C:\Users\Administrator\Desktop\Gốc\Core\bin\Debug\Core.dll
+C:\Users\Administrator\Desktop\Gốc\Core\bin\Debug\Core.pdb
+C:\Users\Administrator\Desktop\Gốc\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Gốc\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Gốc\Core\obj\Debug\Core.dll
+C:\Users\Administrator\Desktop\Gốc\Core\obj\Debug\Core.pdb
