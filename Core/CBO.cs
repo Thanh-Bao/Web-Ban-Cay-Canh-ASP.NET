@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
-using System.Web;
 
 namespace Core
 {
@@ -11,7 +10,7 @@ namespace Core
     {
         public static List<PropertyInfo> GetPropertyInfo(Type objType)
         {
-            var objProperties = (List<PropertyInfo>) HttpRuntime.Cache[objType.FullName];
+            var objProperties = (List<PropertyInfo>) DataCache.GetCache(objType.FullName);
             if (objProperties == null)
             {
                 objProperties = new List<PropertyInfo>();
@@ -20,7 +19,7 @@ namespace Core
                     objProperties.Add(tempLoopVar_objProperty);
                 }
                 objProperties.TrimExcess();
-               // DataCache.SetCache(objType.FullName, objProperties);
+                DataCache.SetCache(objType.FullName, objProperties);
             }
             return objProperties;
         }
@@ -59,7 +58,7 @@ namespace Core
                     {
                         if (Convert.IsDBNull(dr.GetValue(arrOrdinals[i])))
                         {
-                            objProperties[i].SetValue(objObject, null, null);
+                            objProperties[i].SetValue(objObject, Null.SetNull(objProperties[i]), null);
                         }
                         else
                         {
@@ -88,7 +87,7 @@ namespace Core
                                 catch
                                 {
                                     // property does not exist in datareader
-                                    objProperties[i].SetValue(objObject, null, null);
+                                    objProperties[i].SetValue(objObject, Null.SetNull(objProperties[i]), null);
                                 }
                             }
                         }
@@ -170,7 +169,7 @@ namespace Core
                     {
                         if (Convert.IsDBNull(dr.GetValue(arrOrdinals[i])))
                         {
-                            objProperties[i].SetValue(objObject, null, null);
+                            objProperties[i].SetValue(objObject, Null.SetNull(objProperties[i]), null);
                         }
                         else
                         {
@@ -199,7 +198,7 @@ namespace Core
                                 catch
                                 {
                                     // property does not exist in datareader
-                                    objProperties[i].SetValue(objObject,null, null);
+                                    objProperties[i].SetValue(objObject, Null.SetNull(objProperties[i]), null);
                                 }
                             }
                         }
@@ -283,7 +282,7 @@ namespace Core
             {
                 if (objProperties[i].CanWrite)
                 {
-                    objProperties[i].SetValue(objObject, null, null);
+                    objProperties[i].SetValue(objObject, Null.SetNull(objProperties[i]), null);
                 }
             }
             return objObject;
