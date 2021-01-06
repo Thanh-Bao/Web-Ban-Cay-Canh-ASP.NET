@@ -31,3 +31,7 @@ C:\Users\Administrator\Desktop\Gốc\Nhom3\obj\Debug\Nhom3.csprojAssemblyReferen
 C:\Users\Administrator\Desktop\Gốc\Nhom3\obj\Debug\Nhom3.dll.licenses
 C:\Users\Administrator\Desktop\Gốc\Nhom3\obj\Debug\Nhom3.dll
 C:\Users\Administrator\Desktop\Gốc\Nhom3\obj\Debug\Nhom3.pdb
+C:\Users\Administrator\Desktop\WEBCAYCANH\Nhom3\obj\Debug\Nhom3.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\WEBCAYCANH\Nhom3\obj\Debug\Nhom3.dll.licenses
+C:\Users\Administrator\Desktop\WEBCAYCANH\Nhom3\obj\Debug\Nhom3.dll
+C:\Users\Administrator\Desktop\WEBCAYCANH\Nhom3\obj\Debug\Nhom3.pdb
